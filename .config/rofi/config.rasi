@@ -1,0 +1,7 @@
+* {
+   bg: #191724;
+}
+
+#window {
+   background-color: @bg;
+}
