@@ -1,0 +1,14 @@
+{
+  //positioning
+  "gtk-layer-shell": true,
+  "layer": "top", //waybar at top layer 
+  "position": "top", //waybar top position
+  "height": 23,
+
+  //modules
+  "modules-left": ["wlr/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "pulseaudio", "cpu", "memory", "temperature", "battery"
+  ]
+}
