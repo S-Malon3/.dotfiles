@@ -1,0 +1,65 @@
+{
+  //positioning
+  "gtk-layer-shell": true,
+  "layer": "top", //waybar at top layer 
+  "position": "top", //waybar top position
+  "height": 32,
+  "spacing": 4,
+
+  //modules
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "cpu", "memory", "network", "temperature", "battery"
+  ],
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "{volume}% {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": " ",
+    "format-icons" : {
+      "headphone": " ",
+      "hands-free": "",
+      "headset": "",
+      "default": ["󰝟", "󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "cpu": {
+    "format": "{usage}% ",
+    "on-click": "kitty -e vtop",
+    "tooltop": true
+  },
+
+  "memory": {
+    "format": "{}% ",
+    "tooltip": true,
+    "on-click": "kitty -e vtop" 
+  },
+
+  "network": {
+    "format": "",
+    "format-wifi": " ",
+    "format-disconnected": "", //hide the module
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 800,
+    "on-click": "kitty -e nmtui",
+    "max-length": 90
+  },
+
+  "battery": {
+    "Interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-icons": [" ", " ", " ", " ", " "],
+    "max-length": 25,
+    "tooptip": true,
+    "tooltip-format": "{capacity}% {timeTo}"
+  }
+}
