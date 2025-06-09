@@ -8,13 +8,19 @@
 #                  /____/                             
 
 TERMINAL="ghostty"
-MENU = "rofi"
+MENU = "rofi -show drun"
+BAR = "waybar"
+
+# === Rules === #
+
 
 #     ___         __             __             __ 
 #    /   | __  __/ /_____  _____/ /_____ ______/ /_
 #   / /| |/ / / / __/ __ \/ ___/ __/ __ `/ ___/ __/
 #  / ___ / /_/ / /_/ /_/ (__  ) /_/ /_/ / /  / /_  
 # /_/  |_\__,_/\__/\____/____/\__/\__,_/_/   \__/ 
+
+riverctl spawn waybar
 
 #     ____                  __      
 #    /  _/___  ____  __  __/ /______
@@ -25,19 +31,33 @@ MENU = "rofi"
 
 mod="Mod4"
 
+
+# === Open / Close Window === #
+
 # Open a Terminal with Super+Enter
 riverctl map normal $mod Return spawn $TERMINAL
 
 # Close active Window
 riverctl map normal $mod+Shift Q close
 
+# Open MENU
+riverctl map normal $mod R spawn "rofi -show drun"
+
 # Exit River
 riverctl map normal $mod+Shift E exit
 
-# Focus next/previous view in layout stack
+# Refresh River
+riverctl map normal $mod+Shift R spawn "~/.config/river/init"
 
-# Open MENU
-riverctl map normal $mod R spawn $MENU
+# === Move Windows
+
+# Focus next/previous view in layout stack
+riverctl map normal $mod J focus-view next
+riverctl map normal $mod K focus-view previous
+
+# Swap focused view with next/previous view
+riverctl map normal $mod+Shift J swap next
+riverctl map normal $mod+Shift K swal previous
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
