@@ -1,12 +1,12 @@
 {
 	"base":          "#263542",
-	"MANTLE":        "#1f2b37",
-	"CRUST":         "#19222C",
+	"mantle":        "#1f2b37",
+	"crust":         "#19222C",
 
-	"TEXT":          "#FAF4FE",
-	"ACCENT":        "#81D2C8",
-	"ACCENT_LIGHT":  "#ABE3D6",
-	"ACCENT_DARK":   "#2D6973",
-	"HIGHLIGHT":     "#E34F78",
+	"text":          "#FAF4FE",
+	"accent":        "#81D2C8",
+	"accent_light":  "#ABE3D6",
+	"accent_dark":   "#2D6973",
+	"highlight":     "#E34F78",
 	"contrast":      "#E3C46E"
 }

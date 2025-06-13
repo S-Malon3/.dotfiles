@@ -1,3 +1,4 @@
+include ~/.config/sway/colors
 # === Inputs === #
 
 input "type:touchpad" {
@@ -17,7 +18,6 @@ set $mod Mod4
 set $term ghostty
 set $menu rofi -show drun
 #set $background TODO
-
 
 # === Autotiling === #
 
@@ -82,3 +82,7 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 gaps outer 10
 gaps inner 10
+
+client.focused $accent $accent $mantle $accent $accent
+client.focused_inactive $accent_dark $accent_dark $text $accent_dark $accent_dark
+client.unfocused $base $base $text $base $base
