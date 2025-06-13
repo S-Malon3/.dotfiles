@@ -82,6 +82,14 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 output "*" bg ~/Backgrounds/AriZona.jpg fill
 
+
+blur enable
+blur_radius 4
+blur_passes 3
+blur_brightness 1.0
+blur_contrast 1.0
+
+
 gaps outer 10
 gaps inner 10
 
