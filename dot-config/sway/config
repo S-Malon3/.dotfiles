@@ -80,6 +80,8 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 # ===  Apperance === #
 
+output "*" bg ~/Backgrounds/AriZona.jpg fill
+
 gaps outer 10
 gaps inner 10
 
