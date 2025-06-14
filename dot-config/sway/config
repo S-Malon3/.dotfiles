@@ -41,6 +41,31 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 bindsym $mod+a focus parent
 
+#swap windows
+bindsym $mod+Shift+h mark swap,\
+                     focus left,\
+                     swap container with mark swap,\
+                     focus left,\
+                     unmark swap
+
+bindsym $mod+Shift+j mark swap,\
+                     focus down,\
+                     swap container with mark swap,\
+                     focus down,\
+                     unmark swap
+
+bindsym $mod+Shift+k mark swap,\
+                     focus up,\
+                     swap container with mark swap,\
+                     focus up,\
+                     unmark swap
+
+bindsym $mod+Shift+l mark swap,\
+                     focus right,\
+                     swap container with mark swap,\
+                     focus right,\
+                     unmark swap
+
 # Workspaces
 set $ws1 1:1
 set $ws2 2:2
@@ -53,7 +78,7 @@ set $ws8 8:8
 set $ws9 9:9
 set $ws0 0:0
 
-## Switch to Workspace 
+## Switch to Workspace :
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
