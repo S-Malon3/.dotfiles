@@ -121,3 +121,7 @@ gaps inner 10
 client.focused $accent $accent $mantle $accent $accent
 client.focused_inactive $accent_dark $accent_dark $text $accent_dark $accent_dark
 client.unfocused $base $base $text $base $base
+
+default_border pixel 3
+default_floating_border pixel 3
+corner_radius 3
