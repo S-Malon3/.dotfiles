@@ -1,1 +1,4 @@
+# Import Colors
+config-file = colors
+
 background-opacity = 0.9
