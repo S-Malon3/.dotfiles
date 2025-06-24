@@ -12,7 +12,7 @@ mouse_warping container
 
 # === Variables === #
 set $mod Mod4
-#set $lock TODO
+set $lock swaylock
 #set $power TODO
 #set $wifi TODO
 set $term ghostty
@@ -29,6 +29,7 @@ exec_always stacki3 45
 
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
+bindsym $mod+Shift+minus exec $lock
 
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exit
