@@ -1,0 +1,27 @@
+@define-color text #cad3f5;
+@define-color base #24273a;
+@define-color surface #494d64;
+@define-color mainColor #91d7e3;
+@define-color secondaryColor #f0c6c6;
+
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font", "Material Icons", monospace;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+window#waybar {
+  background: @base;
+  color: @text;
+}
+
+#clock,
+#pulseaudio, 
+#cpu,
+#memory,
+#network,
+#temperature,
+#battery {
+  padding: 0 7px;
+}
