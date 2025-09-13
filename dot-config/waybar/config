@@ -7,10 +7,24 @@
   "spacing": 4,
 
   //modules
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["sway/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["pulseaudio", "cpu", "memory", "network", "temperature", "battery"
   ],
+ 
+
+  // === Left === //
+
+	"sway/workspaces": {
+		"format": "{name}",
+		"disable-scroll": true
+	},
+
+  // === Center === //
+
+  
+
+  // === Right === //
 
   "pulseaudio": {
     "scroll-step": 5,

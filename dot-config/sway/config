@@ -17,11 +17,12 @@ set $lock swaylock
 #set $wifi TODO
 set $term ghostty
 set $menu rofi -show drun
+set $bar waybar
 #set $background TODO
 
-# === Autotiling === #
+# === AutoExec === #
 
-exec waybar
+exec_always $bar 
 exec_always stacki3 45
 
 
