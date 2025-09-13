@@ -22,8 +22,9 @@ set $bar waybar
 
 # === AutoExec === #
 
-exec_always $bar 
+exec $bar 
 exec_always stacki3 45
+exec $term -e fish -c "neofetch; exec fish"
 
 
 # === Keybinds === #
