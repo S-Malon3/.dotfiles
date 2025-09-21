@@ -1,5 +1,8 @@
 @import 'colors.module.css';
 
+
+/* === General Settings === */
+
 * {
   border: none;
   font-family: "JetBrainsMono Nerd Font", "Material Icons", monospace;
@@ -8,16 +11,53 @@
 }
 
 window#waybar {
-  background: @background;
+  background-color: transparent;
   color: @foreground;
 }
 
-#clock,
-#pulseaudio, 
-#cpu,
-#memory,
-#network,
-#temperature,
+#clock, #pulseaudio, #cpu, #memory, #network, #temperature, #battery, #workspaces {
+	border: 3px solid @accent;
+	border-radius: 10px;
+	background: @background;
+	color: @foreground;
+	margin-top: 5px;
+}
+
+#clock {
+	padding: 2px 60px;
+}
+
+#pulseaudio, #cpu, #memory, #network, #temperature, #battery {
+	padding: 3px 7px;
+}
+
+/* Apply 10px margin 10 leftmost and rightmost value to line up with Sway windows outer border */
+#workspaces {
+	margin-left: 17px;
+}
+
 #battery {
-  padding: 0 7px;
+	margin-right: 17px;
+}
+
+
+/* === Workspaces === */
+
+#workspaces {
+	min-width: 210px;
+}
+
+#workspaces.button {
+	margin: 0px 50px;
+}
+
+#workspaces button.focused {
+	color: @contrast;
+}
+
+
+/* === Clock === */
+
+#clock {
+	letter-spacing: 4px;
 }

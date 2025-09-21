@@ -137,7 +137,10 @@ blur_brightness 1.0
 blur_contrast 1.0
 
 
-gaps outer 10
+gaps bottom 10
+gaps left 10
+gaps right 10
+gaps top 3
 gaps inner 7
 
 client.focused $accent $accent $mantle $accent $accent
