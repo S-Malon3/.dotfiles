@@ -19,6 +19,7 @@ window#waybar {
 	border: 3px solid @accent;
 	border-radius: 10px;
 	background: @background;
+	opacity: 0.9;
 	color: @foreground;
 	margin-top: 5px;
 }
