@@ -25,7 +25,7 @@ window#waybar {
 }
 
 #clock {
-	padding: 2px 60px;
+	padding: 2px;
 }
 
 #pulseaudio, #cpu, #memory, #network, #temperature, #battery {
@@ -61,4 +61,5 @@ window#waybar {
 
 #clock {
 	letter-spacing: 4px;
+	min-width: 167px;
 }
